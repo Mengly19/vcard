@@ -11,7 +11,7 @@
             fooBar.addEmail("foor@bar.com", vCard.Type.HOME)
             fooBar.addAddress("street", "code", "city", "country", vCard.Type.HOME)
 
-            var link = vCard.export(fooBar, "Foo Bar", true) // use parameter true to force download
+            var link = vCard.export(fooBar, "Foo Bar", false) // use parameter true to force download
             document.body.appendChild(link)
         </script>
         <br/>
@@ -29,7 +29,7 @@
             johnDoe.add(vCard.Entry.ADDRESS, ";;street;city;state;zip code;country", vCard.Type.HOME)
             johnDoe.add(vCard.Entry.URL, "http://john.doe")
 
-            var link = vCard.export(johnDoe, "John Doe", true) // use parameter true to force download
+            var link = vCard.export(johnDoe, "John Doe", false) // use parameter true to force download
             document.body.appendChild(link)
         </script>
     </body>
