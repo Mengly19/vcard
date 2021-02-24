@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="vcard.js"></script>
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+
+
+        <div class="container">
+            
+            <!-- <button onclick="myFunction()">Change link</button> -->
+ 
+            <div class="card">
+              
+              <div class="front side">
+                <h1 class="logo">Cheng Mengly</h1>
+              </div>
+              
+              <div class="back side">
+                <h3 class="name">Cheng Mengly</h3>
+                <div>Full-Stack developer</div>      
+                <div class="info">
+                  <p><span class="property">Email: </span>Cheng.mengly19@kit.edu.kh</p>
+                  <p><span class="property">Twitter: </span>@Mengly19</p>
+                  <p><span class="property">Phone: </span>011-428-092</p>
+                  <p><span class="property">Website:mengly19.github.io/vcard/ </span></p>
+                </div>
+                <img class="img-qrcode" src="./qrcode.png" alt="">
+              </div>
+            </div>
+
+            <a class= "button3" download="Contact.vcf" id="myAnchor" href="">save to contact </a>
+          </div>
+            
+          <script type="text/javascript">
+            // From JSON
+            var mengly = {
+                "version": "4.0",
+                "n": "Cheng;Mengly;;",
+                "fn": "Cheng Mengly",
+                "nickname":"Mengly",
+                "tel": [
+                    {"value": "011-234-567", "type": "cell"}
+                ],
+                "email": [
+                    { "value": "Cheng.mengly19@kit.edu.kh", "type": "work" }
+                ]
+            }
+    
+            var link = vCard.export(mengly, "Contact", false) 
+            document.getElementById("myAnchor").href = link;
+
+
+        </script>
+
+    </body>
+</html>
