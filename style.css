@@ -21,11 +21,15 @@
     color: #00B686;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
+.center{
+  margin: auto auto;
+  
 
+}
 
 img{
-  border-radius: 20px;
-  margin: 20px;
+  border-radius: 50px;
+  padding: 20px;
   width: 100%;
   height: 100%;
 }
