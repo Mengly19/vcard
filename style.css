@@ -1,113 +1,31 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300';
- * {
-	 box-sizing: border-box;
+.oneline{
+    display: flex;
 }
- body {
-	 background: white;
-	 overflow-x: hidden;
+
+.btnCard{
+    /* background-color: black; */
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    color: #00B686;
 }
- .container {
-	 perspective: 800px;
-	/* Styling */
-	 color: #fff;
-	 font-family: 'Open Sans', sans-serif;
-	 text-transform: uppercase;
-	 letter-spacing: 4px;
-	/* Center it */
-	 position: absolute;
-	 top: 50%;
-	 left: 50%;
-	 transform: translate(-50%, -50%);
+.btnCard:hover{
+    text-decoration: none;
 }
- .card {
-	/* Styling */
-	 width: 700px;
-	 height: 400px;
-	 background: #141414;
-	 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	/* Card flipping effects */
-	 transform-style: preserve-3d;
-	 transition: 0.6s;
+.btnCard2{
+    
+    color: #00B686;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
- .side {
-	 position: absolute;
-	 width: 100%;
-	 height: 100%;
-	 backface-visibility: hidden;
-	/* Fix Chrome rendering bug */
-	 transform: rotate(0deg) translateZ(1px);
-}
-/* Flip the card on hover */
- .container:hover .card, .back {
-	 transform: rotateY(-180deg) translateZ(1px);
-}
-/* Front styling */
- .front {
-	/* Center the name + outline (almost) */
-	 line-height: 390px;
-	/* Height - some (because visual center is a little higher than actual center) */
-	 text-align: center;
-}
- .logo {
-	 outline: 1px solid #19f6e8;
-	 display: inline-block;
-	 padding: 15px 40px;
-	 text-transform: uppercase;
-	 font-family: 'Roboto', sans-serif;
-	 font-size: 1.4em;
-	 font-weight: normal;
-	 line-height: 32px;
-	 letter-spacing: 8px;
-}
-/* Back styling */
- .back {
-	 background: black;
-	 padding: 30px;
-}
- .name {
-	 color: white;
-	 margin-bottom: 0;
-}
- p {
-	 margin: 0.8em 0;
-}
- .info {
-	 position: absolute;
-	 bottom: 30px;
-	 left: 30px;
-	 color: white;
-}
- .property {
-	 color: #fff;
-}
-/* Make semi-responsive */
- @media (max-width: 700px) {
-	 .card {
-		 transform: scale(0.5);
-	}
-	 .container:hover .card {
-		 transform: scale(0.5) rotateY(-180deg) translateZ(1px);
-	}
-}
-.button3{
-  position: relative;
-  top:20px;
-  left: 35%;
-  background-color:#4eb5f1;
-  text-align:center;
-  padding:0.3em 1.2em;
-  text-decoration:none;
-  font-weight:300;
-  color: white;
+
+
+img{
   border-radius: 20px;
-}
-button3:hover{
-  background-color:#4095c6 ;
-}
-.img-qrcode{
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  right: 20px;
-  bottom: 20px;
+  margin: 20px;
+  width: 100%;
+  height: 100%;
 }
