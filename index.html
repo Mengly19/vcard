@@ -3,37 +3,24 @@
     <head>
         <script type="text/javascript" src="vcard.js"></script>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     </head>
     <body>
+        <div class="oneline mt-5 justify-content-center">
+            <p><a class = "btnCard  mt-2 "href="#Card"> Card </a></p>
+            <p><a href="#info" class="btnCard btnCard2"> Info </a></p>
+        </div>
 
-
-        <div class="container">
+        <div class="box ">
+            <img src="./2.png" alt="" srcset="">
+            <img src="./1.png" alt="" srcset="">
             
-            <!-- <button onclick="myFunction()">Change link</button> -->
- 
-            <div class="card">
-              
-              <div class="front side">
-                <h1 class="logo">Cheng Mengly</h1>
-              </div>
-              
-              <div class="back side">
-                <h3 class="name">Cheng Mengly</h3>
-                <div>Full-Stack developer</div>      
-                <div class="info">
-                  <p><span class="property">Email: </span>Cheng.mengly19@kit.edu.kh</p>
-                  <p><span class="property">Twitter: </span>@Mengly19</p>
-                  <p><span class="property">Phone: </span>011-428-092</p>
-                  <p><span class="property">Website:mengly19.github.io/vcard/ </span></p>
-                </div>
-                <img class="img-qrcode" src="./qrcode.png" alt="">
-              </div>
-            </div>
+        <div>
 
-            <a class= "button3" download="Contact.vcf" id="myAnchor" href="">save to contact </a>
-          </div>
-            
+        <div class="oneline mt-4 justify-content-center color">
+            <p><a class= "btnCard  mt-2 " download="Contact.vcf" id="myAnchor" href="">save to contact </a></p>
+        </div>
           <script type="text/javascript">
             // From JSON
             var mengly = {
@@ -55,5 +42,8 @@
 
         </script>
 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
